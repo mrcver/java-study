@@ -1,4 +1,4 @@
-package collection;
+package com.example.collection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,31 +8,22 @@ import java.util.List;
  * list
  */
 public class ListTest {
-    public List coursesToSelect;
-
-    public ListTest() {
-        this.coursesToSelect = new ArrayList();
-    }
-
     /**
      * 往备选课程中添加课程
      */
-    public void testAdd() {
+    public static void main(String[] args) {
+        List<Course> coursesToSelect = new ArrayList<>();
+
         Course cr1 = new Course("1", "php");
         coursesToSelect.add(cr1);
-        Course temp = (Course) coursesToSelect.get(0);
+        Course temp = coursesToSelect.get(0);
         System.out.println(temp.id + "-" + temp.name);
 
         Course cr2 = new Course("2", "java");
-        coursesToSelect.add(2, cr2);
-        temp = (Course) coursesToSelect.get(0);
+        coursesToSelect.add(cr2);
+        temp = coursesToSelect.get(0);
         System.out.println(temp.id + "-" + temp.name);
-        temp = (Course) coursesToSelect.get(1);
+        temp = coursesToSelect.get(1);
         System.out.println(temp.id + "-" + temp.name);
-    }
-
-    public static void main(String[] args) {
-        ListTest lt = new ListTest();
-        lt.testAdd();
     }
 }

@@ -1,4 +1,4 @@
-package collection;
+package com.example.collection;
 
 public class Course {
     public String id;

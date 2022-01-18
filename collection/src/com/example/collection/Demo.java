@@ -1,3 +1,5 @@
+package com.example.collection;
+
 import java.util.HashMap;
 
 public class Demo {
