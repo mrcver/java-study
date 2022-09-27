@@ -1,5 +1,0 @@
-server:
-  port: 18008
-spring:
-  application:
-    name: spring-unittest
