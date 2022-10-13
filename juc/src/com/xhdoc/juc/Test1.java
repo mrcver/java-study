@@ -1,3 +1,5 @@
+package com.xhdoc.juc;
+
 //并发同步
 public class Test1 {
     public static void main(String[] args) {
